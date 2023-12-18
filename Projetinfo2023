@@ -1,9 +1,19 @@
 Public class Main { Projetinfo2023
 public static void main (String[] args){
-String s;
+String s, pos;
 
 System.out.println (" Ecrivez ligne par ligne votre algorithme") ; //découper une chaine de characteres
 s=Lire.S();
 while (s!=Fin){
 System.out.println("Continuez d'ecrire votre algorithme ligne par ligne"); 
-s=Lire.S();
+s=Lire.S(); 
+
+String chaine = "s";
+if(chaine.indexOf("Lire") !=-1) {
+pos=chaine.indexOf("Lire");
+pos=pos+6
+
+
+
+
+
