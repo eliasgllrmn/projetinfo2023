@@ -1,17 +1,83 @@
-c class Main { Projetinfo2023
-public static void main (String[] args){
-String s, pos;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
-System.out.println (" Ecrivez ligne par ligne votre algorithme") ; //découper une chaine de characteres
-s=Lire.S();
-while (s!=Fin){
-System.out.println("Continuez d'ecrire votre algorithme ligne par ligne"); 
-s=Lire.S(); 
+public class projet {
+	
+	public static void main (String[] args) {
+		
+		 String cheminFichier = "C:\\Users\\Melwan\\OneDrive - INSA Strasbourg\\Desktop\\info\\caca.txt";
 
-String chaine = "s";
-if(chaine.indexOf("Lire") !=-1) {
-pos=chaine.indexOf("Lire");
-pos=pos+6
+        try {
+            File fichier = new File(cheminFichier);
+            Scanner scanner = new Scanner(fichier);
+
+            int nombreDeLignes = 0;
+
+            // Parcourir chaque ligne du fichier
+            while (scanner.hasNextLine()) {
+                scanner.nextLine();
+                nombreDeLignes++;
+            }
+
+            System.out.println("Nombre de lignes dans le fichier : " + nombreDeLignes);
+
+         
+		
+	String ligne;
+	
+	ligne=Lire.S();
+	
+String Lire = "Lire";
+
+        // Vérifier si la ligne contient le mot
+        if (ligne.contains("Lire")) {
+            System.out.println("cette ligne est une affectation");
+		}
+            
+            String si = "si";
+
+        // Vérifier si la ligne contient le mot
+        if (ligne.contains("si")) {
+            System.out.println("cette ligne est une condition");
+            
+            String Finsi = "Finsi";
+            
+            }
+
+        // Vérifier si la ligne contient le mot
+        if (ligne.contains("Finsi")) {
+            System.out.println("cette ligne est la fin d'une condition");
+            
+            
+              String Ecrire = "Ecrire";
+            
+            }
+
+        // Vérifier si la ligne contient le mot
+        if (ligne.contains("Ecrire")) {
+            System.out.println("cette ligne est une affichage");
+            
+            
+            
+              String Fin = "Fin";
+            
+            }
+
+        // Vérifier si la ligne contient le mot
+        if (ligne.contains("Fin")) {
+            System.out.println("cette ligne est la fin de l'algorithme");
+            
+	    
+            
+       }     
+          // Fermer le scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }   
+	}
+}
 
 
 
