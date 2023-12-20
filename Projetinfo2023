@@ -1,4 +1,4 @@
-Public class Main { Projetinfo2023
+c class Main { Projetinfo2023
 public static void main (String[] args){
 String s, pos;
 
