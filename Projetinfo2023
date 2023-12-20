@@ -3,10 +3,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class projet {
-	
 	public static void main (String[] args) {
 		
-		 String cheminFichier = "C:\\Users\\Melwan\\OneDrive - INSA Strasbourg\\Desktop\\info\\caca.txt";
+String cheminFichier = "C:\\Users\\Melwan\\OneDrive - INSA Strasbourg\\Desktop\\info\\caca.txt";
 
         try {
             File fichier = new File(cheminFichier);
@@ -21,9 +20,7 @@ public class projet {
             }
 
             System.out.println("Nombre de lignes dans le fichier : " + nombreDeLignes);
-
-         
-		
+	
 	String ligne;
 	
 	ligne=Lire.S();
@@ -58,8 +55,6 @@ String Lire = "Lire";
         if (ligne.contains("Ecrire")) {
             System.out.println("cette ligne est une affichage");
             
-            
-            
               String Fin = "Fin";
             
             }
@@ -67,8 +62,6 @@ String Lire = "Lire";
         // Vérifier si la ligne contient le mot
         if (ligne.contains("Fin")) {
             System.out.println("cette ligne est la fin de l'algorithme");
-            
-	    
             
        }     
           // Fermer le scanner
@@ -78,8 +71,3 @@ String Lire = "Lire";
         }   
 	}
 }
-
-
-
-
-
