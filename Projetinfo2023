@@ -1,3 +1,44 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class test {
+
+    public static void main(String[] args) {
+        String nomFichier = "C:\\Users\\elias\\OneDrive\\Bureau\\geany java\\lol.txt"; // Chemin vers votre fichier texte
+        String[] motsDemandes = {"Ecrire", "Lire", "caca"}; // Mots à détecter
+
+        try {
+            FileReader fileReader = new FileReader(nomFichier);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            String ligne;
+
+            while ((ligne = bufferedReader.readLine()) != null) {
+                for (String Ecrire : motsDemandes) {
+                    if (ligne.contains(Ecrire)) {
+                        System.out.println("Le mot '" + Ecrire + "' a ete trouve dans la ligne :");
+                        System.out.println(ligne);
+                    }
+                }
+            }
+
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 Algorithme Bonjour
 Variables
