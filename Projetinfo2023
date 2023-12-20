@@ -6,6 +6,7 @@ public class projet {
 	public static void main (String[] args) {
 		
 String cheminFichier = "C:\\Users\\Melwan\\OneDrive - INSA Strasbourg\\Desktop\\info\\caca.txt";
+##faire attention au "chemin" vers le fichier ca dépend du dossier dans lequel vous le mettez
 
         try {
             File fichier = new File(cheminFichier);
@@ -71,3 +72,13 @@ String Lire = "Lire";
         }   
 	}
 }
+Algorithme Bonjour
+Variables
+nom,prenom : chaîne
+Début
+Ecrire(”donner nom : ”)
+Lire(nom)
+Ecrire(”donner prenom : ”)
+Lire(prenom)
+Ecrire (”Bonjour ”, nom, prenom)
+Fin.
